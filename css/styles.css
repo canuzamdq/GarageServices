@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.headerContainer {
+    background-image: url(../img/heroBG3.jpg);
+    background-repeat: no-repeat; 
+    background-size:contain;
+    position: relative;
+    height: 60vh;
+    background-color: blue;
+}
+
+.headerPages {
+    width: 100%;
+    height: 8vh;
+    background-color: crimson;
+}
+
+.menu {
+    height: 8vh;
+    width: auto;
+    background-color: rgb(224, 81, 24);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    background-color: coral;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;  
+    
+}
+
+.btnSection {
+    color: rgb(256, 256, 256);
+    width: 50vw;
+    height: 25vh;
+    background-color: rgb(12, 59, 184);
+}
+
+.btnSection.drk {
+    background-color: rgb(12, 33, 92);
+}
+
+.section1 {
+    grid-area: section1;
+    width: 50vw;
+    height: 25vh;
+    
+}
+
+.section2 {
+    grid-area: section2;
+    color: rgb(256, 256, 256);
+    width: 50vw;
+    height: 25vh;
+    
+}
+
+
+.section3 {
+    grid-area: section3;
+    color: rgb(256, 256, 256);
+    width: 50vw;
+    height: 25vh;
+    
+}
+
+.section4 {
+    grid-area: section4;
+    width:50vw;
+    height: 25vh;
+    color: rgb(256, 256, 256);
+    
+}
+
+
+/* Pages */
+
+.mainContainerPages {
+    width: 100%;
+    background-color: fuchsia;
+}
+
+.sectionArticle {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(256, 256, 256);
+}
+
+.sectionArticle img {
+    width: 80px;
+}
+
+.sectionPicture {
+    width: 100%;
+    height: 32vh;
+    background-image: url(../img/servicios2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerContent {
+    grid-area: footerContent;
+    display: none;
+    height: 15vh;
+    color: rgb(256, 256, 256);
+    background-color: rgb(51, 51, 51);
+}
+
+.mainContainer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "section1 section2"
+    "section4 section3";
+}
+
+@media (min-width: 768px) {
+
+    .headerContainer {
+        height: 60vh;
+        width: auto;
+        background-color: rgb(99, 173, 209);
+    }
+
+    .footerContent {
+        display: flex;
+        height: 10vh;
+        color: rgb(256, 256, 256);
+        background-color: rgb(51, 51, 51)
+    }
+
+    .btnSection {
+        color: rgb(256, 256, 256);
+        width: 25vw;
+        height: 45vh;
+        background-color: rgb(12, 59, 184);
+    
+    }
+
+    .btnSection.drk {
+        background-color: rgb(12, 33, 92);
+    }
+
+    .section1 {
+        width: 18vw;
+        min-width: 192px;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .section2 {
+        width: 18vw;
+        height: 45vh ;
+        min-width: 192px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section3 {
+        width: 18vw;
+        height: 45vh ;
+        min-width: 192px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section4 {
+        width: 18vw;
+        height: 45vh;
+        min-width: 192px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainContainer {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        max-width: 1980px;
+    }
+
+    .mainContainerPages {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: fuchsia;
+    }
+
+    .sectionArticle {
+        width: 40vw;
+        height: 70vh;
+        background-color: aqua;
+    }
+
+    .sectionPicture {
+        width: 60vw;
+        height: 70vh;
+        background-color: black;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+
+   .section1 {
+        margin: 50px 10px;
+   }
+
+   .section2 {
+        margin: 50px 10px;
+}
+
+    .section3 {
+        margin: 50px 10px;
+    }
+
+    .section4 {
+        margin: 50px 10px;
+   }
+
+}
