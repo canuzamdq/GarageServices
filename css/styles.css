@@ -13,7 +13,6 @@ a {
 
 
 .headerContainer {
-    background-image: url(../img/heroBG3.jpg);
     width: 100%;
     background-repeat: no-repeat; 
     background-size: cover;
@@ -22,6 +21,9 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation-name: headerAnimate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite ;
 }
 
 
@@ -657,5 +659,16 @@ form {
     width: 60vw;
     height: 80vh;
 }
+
+}
+
+/** ANIMACION KEYFRAME **/
+
+@keyframes headerAnimate {
+    0% {background-image: url(../img/heroBG3.jpg)}
+    25% {background-image: url(../img/header1.jpg)}
+    50% {background-image: url(../img/header2.jpg)}
+    75% {background-image: url(../img/header3.jpg)}
+    100% {background-image: url(../img/header4.jpg)}
 
 }
