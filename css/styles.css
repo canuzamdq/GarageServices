@@ -22,7 +22,7 @@ a {
     flex-direction: column;
     justify-content: center;
     animation-name: headerAnimate;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-iteration-count: infinite ;
 }
 
@@ -220,16 +220,28 @@ a {
         justify-content: center;
         align-items: center;
         background-color: rgb(12, 59, 184);
+        transition: background-color 1s;
         
     }
+
+        .btn:hover {
+            background-color: rgb(43, 95, 236);
+        }
+
 
         .btn a {
             color: rgb(256, 256, 256);
         }
 
+            
+
     .btn.drkBlue {
         background-color: rgb(12, 33, 92);
     }
+
+        .btn.btn.drkBlue:hover {
+            background-color: rgb(43, 95, 236);
+        }
 
 
 .sectionPicture {
@@ -455,6 +467,7 @@ form {
 
     .sectionArticle img {
         width: 120px;
+
     
     }
 
