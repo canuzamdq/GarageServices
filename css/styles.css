@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 
 a {
     text-decoration: none;
+
 }
-
-
 
 
 /***** Header *****/
@@ -26,8 +25,8 @@ a {
     flex-direction: column;
     justify-content: center;
     animation-name: headerAnimate;
-    animation-duration: 30s;
-    animation-iteration-count: infinite ;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -43,6 +42,8 @@ a {
     background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(256, 256, 256)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+/** ends color boton hamburguesa **/
 
 .bgColorNav {
     background-color:  rgba(51, 51, 51,0.7);
@@ -97,9 +98,11 @@ a {
     justify-content: center;
     align-items: center;
     color: rgb(256, 256, 256);
-    width: 50vw;
-    height: 25vh;
+    
+    height: 100%;
     background-color: rgb(12, 59, 184);
+    margin: 0;
+    padding: 0;
 }
 
     .btnSection h3 {
@@ -122,30 +125,26 @@ a {
 
 .section1 {
     grid-area: section1;
-    width: 50vw;
-    height: 25vh;
+    height: 180px;
     
 }
 
 .section2 {
     grid-area: section2;
-    width: 50vw;
-    height: 25vh;
+    height: 180px;
     
 }
 
 
 .section3 {
     grid-area: section3;
-    width: 50vw;
-    height: 25vh;
+    height: 180px;
     
 }
 
 .section4 {
     grid-area: section4;
-    width:50vw;
-    height: 25vh;
+    height: 180px;
     
 }
 
@@ -160,7 +159,7 @@ a {
     "section4 section3";
 }
 
-/** Footer class=footerContentPages**/
+/** Footer utiliza class=footerContentPages**/
 
 
 /********************** Pages ************************/
@@ -172,7 +171,6 @@ a {
     height: 8vh;
     
 }
-
 
 
 /** Pages-Nav**/
@@ -255,6 +253,10 @@ a {
     padding: 10px;
 }
 
+    .btnCustom.drk {
+        background-color: rgb(12, 33, 92);
+    }
+
     .btnCustom:hover {
         background-color: rgb(29, 77, 211);
     }
@@ -310,12 +312,11 @@ a {
 
 .headerContacto {
     width: 100%;
-    height: 7vh;
+    height: 10vh;
 }
 
 form {
-    width: 100%;
-    
+    width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -330,7 +331,6 @@ form {
 .pictureContacto {
     
     height: auto;
-    /*margin: 10px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -422,15 +422,7 @@ form {
         background-color: rgb(99, 173, 209);
     }
 
-    .menu {
-        background-color: rgb(51, 51, 51);
-    }
-
-    .menu ul {
-        width: 50%;
-
-    }    
-
+   
     .btnSection {
         color: rgb(256, 256, 256);
         width: 25vw;
@@ -502,7 +494,7 @@ form {
     }
 
     .sectionPicture {
-        height: 100vh;
+        height: 80vh;
         background-position: right;
     }
 
@@ -532,6 +524,12 @@ form {
 
 /* end Pages */
 
+/** Contacto **/
+
+.formContacto {
+    padding: 40px;
+}
+
     
 }
 
@@ -560,12 +558,6 @@ form {
             font-weight: 600;
             font-size: 2em;
             text-shadow: none;
-        }
-
-        .menu {
-            background-color: rgba(51, 51, 51, 0.5);
-            backdrop-filter: 40px;
-            box-shadow: 0 0 5px rgb(51, 51, 51);
         }
     
     .mainContainer {
@@ -669,13 +661,12 @@ form {
 .pictureContacto {
     grid-area: pictureContacto;
     
-    
 }
 
 .formContacto {
     grid-area: formContacto;
     width: 100%;
-    
+    padding: 40px;
 
 }
 
@@ -696,10 +687,6 @@ form {
     "mapContacto formContacto";
 }
 
-.sectionPicture {
-    z-index: 1;
-    height: 80vh;
-}
 
 }
 
