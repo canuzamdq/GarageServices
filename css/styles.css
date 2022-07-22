@@ -9,7 +9,6 @@
 
 a {
     text-decoration: none;
-
 }
 
 
@@ -17,19 +16,20 @@ a {
 
 .headerContainer {
     width: 100%;
+    background-image: url("../img/heroBG3.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     background-position:top;
-    height: 50vh;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation-name: headerAnimate;
-    animation-duration: 20s;
+    /*animation-name: headerAnimate;*/
+    animation-duration: 40s;
     animation-iteration-count: infinite;
 }
 
-
+    
 /** Nav **/
 
 /*** color boton hamburguesa ***/
@@ -61,6 +61,7 @@ a {
 
 .navbar-brand:focus, .navbar-brand:hover {
     color: rgb(256, 256, 256);
+    font-weight: 600;
 }
 
 .textColorWhite {
@@ -79,13 +80,13 @@ a {
 
     .heroText h1 {
         font-weight: 400;
-        font-size: 2.5em;
+        font-size: 3em;
         text-shadow: 0.01em 0.01em 0.1em rgb(51, 51, 51);
     }
 
     .heroText h2 {
         font-weight: 400;
-        font-size: 1.5em;
+        font-size: 1.8em;
         text-shadow: 0.01em 0.01em 0.1em rgb(51, 51, 51);
     }
 
@@ -98,12 +99,15 @@ a {
     justify-content: center;
     align-items: center;
     color: rgb(256, 256, 256);
-    
     height: 100%;
     background-color: rgb(12, 59, 184);
     margin: 0;
     padding: 0;
 }
+
+    .btnSection:hover {
+        background-color: rgb(63, 106, 223);
+    }
 
     .btnSection h3 {
         font-size: 1.5em;
@@ -117,6 +121,10 @@ a {
     .btnSection.drk {
         background-color: rgb(12, 33, 92);
     }
+
+        .btnSection.drk:hover {
+            background-color: rgb(63, 106, 223);
+        }
 
 .iconSection {
     width: 70px;
@@ -214,14 +222,14 @@ a {
         color: rgb(12, 59, 184);
         font-size: 2em;
         font-weight: 600;
-        margin-bottom: 10px;
+        
     }
         
     .sectionArticle h4 {
         color: rgb(12, 33, 92);
         font-size: 2em;
         font-weight: 600;
-        margin-bottom: 15px;
+        
     }
 
     .sectionArticle img {
@@ -258,7 +266,7 @@ a {
     }
 
     .btnCustom:hover {
-        background-color: rgb(29, 77, 211);
+        background-color: rgb(63, 106, 223);
     }
 
     .btnCustom a {
@@ -308,6 +316,9 @@ a {
         justify-content: space-between;
     }
 
+    
+
+
 /** Contacto **/
 
 .headerContacto {
@@ -329,7 +340,6 @@ form {
 }
 
 .pictureContacto {
-    
     height: auto;
     display: flex;
     flex-direction: column;
@@ -430,9 +440,7 @@ form {
     
     }
 
-    .btnSection.drk {
-        background-color: rgb(12, 33, 92);
-    }
+   
 
     .section1 {
         width: 25vw;
@@ -484,7 +492,7 @@ form {
         color: rgb(12, 59, 184);
         font-size: 2.5em;
         font-weight: 400;
-        margin-bottom: 20px;
+       
     }
 
     .sectionArticle img {
@@ -618,10 +626,17 @@ form {
     width: 18vw;
     min-width: 220px;
     height: 42vh;
-    padding-top: 20px;;
     justify-content: flex-start;
 
     }
+
+        .btnSection:hover {
+            background-color: rgb(12, 59, 184);
+        }
+
+        .btnSection.drk:hover {
+            background-color: rgb(12, 33, 92);
+        }
     
     .btnSection h3 {
         font-size: 1.5em;
@@ -634,13 +649,13 @@ form {
         display:initial;
         width: 75%;
         text-align: center;
-        padding-top: 10%;
+        
         font-size: 1em;
     }
 
    .iconSection {
     width: 128px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     
     }
 
