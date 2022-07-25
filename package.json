@@ -1,0 +1,24 @@
+{
+  "name": "garageservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canuzamdq/GarageServices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canuzamdq/GarageServices/issues"
+  },
+  "homepage": "https://github.com/canuzamdq/GarageServices#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

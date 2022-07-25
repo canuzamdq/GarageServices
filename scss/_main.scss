@@ -1,0 +1,73 @@
+.btnSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    height: 100%;
+    background-color: $blue;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        background-color: $ligthBlue;
+    }
+
+    & h3 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    & p {
+        display: none;
+    }
+
+    &.drk {
+        background-color: $drkBlue;
+    
+        &:hover {
+            background-color: $ligthBlue;
+        }
+    }
+}
+
+.iconSection {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.section1 {
+    grid-area: section1;
+    height: 180px;
+    
+}
+
+.section2 {
+    grid-area: section2;
+    height: 180px;
+    
+}
+
+
+.section3 {
+    grid-area: section3;
+    height: 180px;
+    
+}
+
+.section4 {
+    grid-area: section4;
+    height: 180px;
+    
+}
+
+.mainContainer {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "section1 section2"
+    "section4 section3";
+}
