@@ -11,3 +11,33 @@ a {
     text-decoration: none;
 }
 
+/* maps */
+
+$fontSize: (
+    10: 1em,
+    15: 1.5em,
+    18: 1.8em,
+    20: 2em,
+    25: 2.5em,
+    28: 2.8em,
+    30: 3em,
+    35: 3.5em,
+    50: 5em,
+);
+
+/* mixin */
+
+@mixin displayFlex ($align, $justify, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+
+}
+
+
+
+
+
+
+

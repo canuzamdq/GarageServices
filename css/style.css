@@ -9,19 +9,19 @@ a {
   text-decoration: none;
 }
 
+/* maps */
+/* mixin */
 .headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   background-image: url("../img/heroBG3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /*animation-name: headerAnimate
-  animation-duration: 40s;
-  animation-iteration-count: infinite;*/
 }
 
 .heroText {
@@ -75,9 +75,9 @@ a {
 /** edns nav**/
 .btnSection {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: rgb(255, 255, 255);
   height: 100%;
   background-color: rgb(12, 59, 184);
@@ -162,13 +162,13 @@ a {
 }
 
 .sectionArticle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(255, 255, 255);
 }
 .sectionArticle h3 {
@@ -219,7 +219,7 @@ a {
 .sectionPicture {
   width: 100%;
   height: 42vh;
-  background-image: url(../img/servicios2.png);
+  background-image: url(../img/servicios2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -229,17 +229,18 @@ a {
   background-position: center;
 }
 .sectionPicture.nosotros {
-  background-image: url(../img/nosotros.png);
+  background-image: url(../img/nosotros1.jpg);
   background-position: center;
 }
 
 /**Pages-Footer**/
 .footerContentPages {
-  width: 100%;
-  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 12vh;
   color: rgb(255, 255, 255);
   background-color: rgb(51, 51, 51);
 }
@@ -259,10 +260,11 @@ a {
 }
 
 form {
-  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -272,11 +274,12 @@ form {
 }
 
 .pictureContacto {
-  height: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   background-color: rgb(255, 255, 255);
 }
 .pictureContacto h3 {
@@ -294,23 +297,24 @@ form {
 }
 
 .formContacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   margin: 0;
   background-color: rgb(12, 33, 92);
 }
 
 .formGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   max-width: 500px;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: rgb(255, 255, 255);
 }
 .formGroup p {
@@ -327,10 +331,11 @@ form {
 }
 
 .check {
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: row;
+  padding: 10px;
 }
 
 .formbtn {
@@ -365,30 +370,36 @@ form {
   }
   .section2 {
     width: 25%;
+    min-width: 192px;
     height: 40vh;
     min-width: 192px;
   }
   .section3 {
     width: 25%;
+    min-width: 192px;
     height: 40vh;
     min-width: 192px;
   }
   .section4 {
     width: 25%;
+    min-width: 192px;
     height: 40vh;
     min-width: 192px;
   }
   .mainContainer {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
     max-width: 1980px;
   }
   /* Pages */
   .mainContainerPages {
-    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
     background-color: rgb(255, 255, 255);
   }
   .sectionArticle h3 {
@@ -407,6 +418,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
     height: 10vh;
     color: rgb(255, 255, 255);
     background-color: rgb(51, 51, 51);
@@ -450,44 +462,19 @@ form {
   }
   .mainContainer {
     display: flex;
-    width: 100%;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
   }
-  .section1 {
+  /* clase base */
+  .section, .section4, .section3, .section2, .section1 {
     width: 18vw;
     min-width: 220px;
     margin: 50px 8px;
   }
-  .section1:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s;
-  }
-  .section2 {
-    width: 18vw;
-    min-width: 220px;
-    margin: 50px 8px;
-  }
-  .section2:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s;
-  }
-  .section3 {
-    width: 18vw;
-    min-width: 220px;
-    margin: 50px 8px;
-  }
-  .section3:hover {
-    transform: translateY(-10px);
-    transition: transform 0.3s;
-  }
-  .section4 {
-    width: 18vw;
-    min-width: 220px;
-    margin: 50px 8px;
-  }
-  .section4:hover {
+  .section:hover, .section4:hover, .section3:hover, .section2:hover, .section1:hover {
     transform: translateY(-10px);
     transition: transform 0.3s;
   }

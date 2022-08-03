@@ -34,24 +34,21 @@
 
     
 .sectionArticle {
+    @include displayFlex (center, center, column);
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: $white;
 
     & h3 {
         color: $blue;
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: 20);
         font-weight: 600;
     }
         
     & h4 {
         color: $drkBlue;
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: 20);
         font-weight: 600;
         
     }
@@ -68,7 +65,7 @@
 
         & p {
             color: $grey;
-            font-size: 1em;
+            font-size: map-get($map: $fontSize, $key: 10);
             font-weight: 400;
             text-align: center;
             font-style: italic;
@@ -103,7 +100,7 @@
 .sectionPicture {
     width: 100%;
     height: 42vh;
-    background-image: url(../img/servicios2.png);
+    background-image: url(../img/servicios2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -114,7 +111,7 @@
     }
 
     &.nosotros {
-        background-image: url(../img/nosotros.png);
+        background-image: url(../img/nosotros1.jpg);
         background-position: center;
     }
 }
@@ -123,11 +120,9 @@
 /**Pages-Footer**/
 
 .footerContentPages {
+    @include displayFlex (center, center, row);
     width: 100%;
     height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: $white;
     background-color: $grey;
 
@@ -150,10 +145,8 @@
 }
 
 form {
+    @include displayFlex(center, center, column);
     width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $white;
 }
 .mainContacto {
@@ -163,16 +156,14 @@ form {
 }
 
 .pictureContacto {
+    @include displayFlex(center, center, column);
+    width: 100%; 
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: $white;
 
     & h3 {
         color: $drkBlue;
-        font-size: 2em;
+        font-size: map-get($map: $fontSize, $key: 20);
         font-weight: 600;
         padding-top: 10px;
     }
@@ -187,12 +178,9 @@ form {
 }
 
 .formContacto {
+    @include displayFlex(center, center, column);
     width: 100%;
     height: auto;   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     margin: 0;
     background-color: $drkBlue;
@@ -200,16 +188,14 @@ form {
 }
 
    .formGroup {
+        @include displayFlex(center, center, column);
         max-width: 500px;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         background-color: $white;
         
         & p {
             color: $grey;
-            font-size: 1em;
+            font-size:  map-get($map: $fontSize, $key: 10);
             padding: 10px;         
         }
    }    
@@ -222,10 +208,9 @@ form {
     }
 
     .check {
+        @include displayFlex(center, space-around, row);
         padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+
     }
 
 

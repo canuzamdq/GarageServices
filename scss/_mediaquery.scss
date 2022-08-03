@@ -14,48 +14,21 @@
     
     }
 
-   
-    .section1 {
-        width: 25%;
-        min-width: 192px;
-        height: 40vh;
-        min-width: 192px;
+    @for $i from 1 through 4 {
+        .section#{$i} {width: 25%; min-width: 192px; height: 40vh; min-width: 192px;}
     }
-
-    .section2 {
-        width: 25%;
-        height: 40vh ;
-        min-width: 192px;
-
-    }
-
-    .section3 {
-        width: 25%;
-        height: 40vh ;
-        min-width: 192px;
-       
-    }
-
-    .section4 {
-        width: 25%;
-        height: 40vh;
-        min-width: 192px;
-        
-    }
-
+    
+    
     .mainContainer {
-        display: flex;
-        align-content: center;
-        justify-content: center;
+        @include displayFlex (center, center, row);
         max-width: 1980px;
     }
 
 /* Pages */
 
     .mainContainerPages {
+        @include displayFlex (center, center, row);
         width: 100%;
-        display: flex;
-        align-items: center;
         background-color: $white;
     }
 
@@ -63,7 +36,7 @@
 
         & h3 {
         color: $blue;
-        font-size: 2.5em;
+        font-size: map-get($map: $fontSize, $key: 25);
         font-weight: 400;
         }
 
@@ -80,9 +53,7 @@
     }
 
     .footerContent {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include displayFlex (center, space-around, row);
         height: 10vh;
         color: $white;
         background-color: $grey;
@@ -131,74 +102,42 @@
     
         & h1 {
             font-weight: 600;
-            font-size: 5em;
+            font-size: map-get($map: $fontSize, $key: 50);
             text-shadow: none;
         }
     
         & h2 {
             font-weight: 600;
-            font-size: 2em;
+            font-size: map-get($map: $fontSize, $key: 20);
             text-shadow: none;
         }
 
     }
     
     .mainContainer {
+        @include displayFlex (center, center, row);
         display: flex;
         width: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
     }
-   
-    .section1 {
-        width: 18vw;
-        min-width: 220px;
-        margin: 50px 8px;
+    
+/* clase base */
 
-        &:hover {
-            transform: translateY(-10px);
-	        transition: transform 0.3s;
-        }
-
-    }
-
-    .section2 {
+    .section {
         width: 18vw;
         min-width: 220px;
         margin: 50px 8px;
     
         &:hover {
             transform: translateY(-10px);
-	        transition: transform 0.3s;
+            transition: transform 0.3s;
         }
-
     }
 
-
-    .section3 {
-        width: 18vw;
-        min-width: 220px;
-        margin: 50px 8px;
-
-        &:hover {
-            transform: translateY(-10px);
-	        transition: transform 0.3s;
-        }
-
+    @for $i from 1 through 4 {
+        .section#{$i}{@extend .section;}
     }
-
-    .section4 {
-        width: 18vw;
-        min-width: 220px;
-        margin: 50px 8px;
-
-        &:hover {
-            transform: translateY(-10px);
-	        transition: transform 0.3s;
-        }
-
-    }
+   
+    
 
 
    .btnSection {
@@ -216,7 +155,7 @@
         }
     
         & h3 {
-            font-size: 1.5em;
+            font-size: map-get($map: $fontSize, $key: 15);
             font-weight: 600;
             margin-bottom: 20px;
         
@@ -226,7 +165,7 @@
             display:initial;
             width: 75%;
             text-align: center;
-            font-size: 1em;
+            font-size: map-get($map: $fontSize, $key: 10);
         }
     }
 
