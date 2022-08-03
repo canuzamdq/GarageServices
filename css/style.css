@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headerContainer {
+  width: 100%;
+  background-image: url("../img/heroBG3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*animation-name: headerAnimate
+  animation-duration: 40s;
+  animation-iteration-count: infinite;*/
+}
+
+.heroText {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: center;
+}
+.heroText h1 {
+  font-weight: 400;
+  font-size: 3em;
+  text-shadow: 0.01em 0.01em 0.1em rgb(51, 51, 51);
+}
+.heroText h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+  text-shadow: 0.01em 0.01em 0.1em rgb(51, 51, 51);
+}
+
+/** Nav **/
+/*** color boton hamburguesa ***/
+.navbar-toggler {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(246, 232, 232)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/** ends color boton hamburguesa **/
+.bgColorNav {
+  background-color: rgba(51, 51, 51, 0.7);
+}
+.bgColorNav ul a {
+  color: rgb(255, 255, 255);
+}
+.bgColorNav ul a:hover {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.textColorWhite {
+  color: rgb(255, 255, 255);
+}
+
+/** edns nav**/
+.btnSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  background-color: rgb(12, 59, 184);
+  margin: 0;
+  padding: 0;
+}
+.btnSection:hover {
+  background-color: rgb(63, 106, 223);
+}
+.btnSection h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.btnSection p {
+  display: none;
+}
+.btnSection.drk {
+  background-color: rgb(12, 33, 92);
+}
+.btnSection.drk:hover {
+  background-color: rgb(63, 106, 223);
+}
+
+.iconSection {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.section1 {
+  grid-area: section1;
+  height: 180px;
+}
+
+.section2 {
+  grid-area: section2;
+  height: 180px;
+}
+
+.section3 {
+  grid-area: section3;
+  height: 180px;
+}
+
+.section4 {
+  grid-area: section4;
+  height: 180px;
+}
+
+.mainContainer {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "section1 section2" "section4 section3";
+}
+
+/** Pages-header**/
+.headerPages {
+  width: 100%;
+  height: 8vh;
+}
+
+/** Pages-Nav**/
+.bgColorNavPages {
+  background-color: rgb(51, 51, 51);
+}
+
+.bgColorNavPages ul a {
+  color: rgb(255, 255, 255);
+}
+.bgColorNavPages ul a:hover {
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+/** Pages-Main**/
+.mainContainerPages {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  line-height: 0.3em;
+}
+
+.sectionArticle {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+.sectionArticle h3 {
+  color: rgb(12, 59, 184);
+  font-size: 2em;
+  font-weight: 600;
+}
+.sectionArticle h4 {
+  color: rgb(12, 33, 92);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.sectionArticle img {
+  width: 100px;
+}
+
+.sectionArticleText {
+  margin-bottom: 20px;
+}
+.sectionArticleText p {
+  color: rgb(51, 51, 51);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 350px;
+  line-height: 25px;
+}
+
+.btnCustom {
+  background-color: rgb(12, 59, 184);
+  border: 0px;
+  padding: 10px;
+}
+.btnCustom.drk {
+  background-color: rgb(12, 33, 92);
+}
+.btnCustom:hover {
+  background-color: rgb(63, 106, 223);
+}
+.btnCustom a {
+  color: rgb(255, 255, 255);
+}
+
+.sectionPicture {
+  width: 100%;
+  height: 42vh;
+  background-image: url(../img/servicios2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.sectionPicture.diagnostico {
+  background-image: url(../img/taller.jpg);
+  background-position: center;
+}
+.sectionPicture.nosotros {
+  background-image: url(../img/nosotros.png);
+  background-position: center;
+}
+
+/**Pages-Footer**/
+.footerContentPages {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+}
+.footerContentPages p {
+  display: none;
+}
+.footerContentPages img {
+  width: 25px;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+/** Contacto **/
+.headerContacto {
+  width: 100%;
+  height: 10vh;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.mainContacto {
+  width: 100%;
+  height: auto;
+}
+
+.pictureContacto {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+.pictureContacto h3 {
+  color: rgb(12, 33, 92);
+  font-size: 2em;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.mapContacto {
+  height: 45vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.formContacto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  background-color: rgb(12, 33, 92);
+}
+
+.formGroup {
+  max-width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+.formGroup p {
+  color: rgb(51, 51, 51);
+  font-size: 1em;
+  padding: 10px;
+}
+
+.field {
+  padding: 10px;
+  margin: 10px;
+  width: 70vw;
+  max-width: 400px;
+}
+
+.check {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formbtn {
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+}
+
+.textAreaSize {
+  width: 75vw;
+  max-width: 400px;
+  height: 20vh;
+  resize: none;
+}
+
+/* end contacto*/
+@media (min-width: 768px) {
+  .headerContainer {
+    height: 50vh;
+    width: auto;
+  }
+  .btnSection {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+  }
+  .section1 {
+    width: 25%;
+    min-width: 192px;
+    height: 40vh;
+    min-width: 192px;
+  }
+  .section2 {
+    width: 25%;
+    height: 40vh;
+    min-width: 192px;
+  }
+  .section3 {
+    width: 25%;
+    height: 40vh;
+    min-width: 192px;
+  }
+  .section4 {
+    width: 25%;
+    height: 40vh;
+    min-width: 192px;
+  }
+  .mainContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 1980px;
+  }
+  /* Pages */
+  .mainContainerPages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+  .sectionArticle h3 {
+    color: rgb(12, 59, 184);
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+  .sectionArticle img {
+    width: 120px;
+  }
+  .sectionPicture {
+    height: 80vh;
+    background-position: right;
+  }
+  .footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(51, 51, 51);
+  }
+  .footerContent img {
+    width: 25px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+  .footerContentPages {
+    justify-content: space-around;
+  }
+  .footerContentPages p {
+    display: contents;
+  }
+  /* end Pages */
+  /** Contacto **/
+  .formContacto {
+    padding: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .headerContainer {
+    height: 68vh;
+  }
+  .heroText {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-align: center;
+  }
+  .heroText h1 {
+    font-weight: 600;
+    font-size: 5em;
+    text-shadow: none;
+  }
+  .heroText h2 {
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: none;
+  }
+  .mainContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .section1 {
+    width: 18vw;
+    min-width: 220px;
+    margin: 50px 8px;
+  }
+  .section1:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+  }
+  .section2 {
+    width: 18vw;
+    min-width: 220px;
+    margin: 50px 8px;
+  }
+  .section2:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+  }
+  .section3 {
+    width: 18vw;
+    min-width: 220px;
+    margin: 50px 8px;
+  }
+  .section3:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+  }
+  .section4 {
+    width: 18vw;
+    min-width: 220px;
+    margin: 50px 8px;
+  }
+  .section4:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+  }
+  .btnSection {
+    width: 18vw;
+    min-width: 220px;
+    height: 42vh;
+    justify-content: flex-start;
+  }
+  .btnSection:hover {
+    background-color: rgb(12, 59, 184);
+  }
+  .btnSection.drk:hover {
+    background-color: rgb(12, 33, 92);
+  }
+  .btnSection h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .btnSection p {
+    display: initial;
+    width: 75%;
+    text-align: center;
+    font-size: 1em;
+  }
+  .iconSection {
+    width: 80px;
+    margin-top: 50px;
+  }
+  .footerContent {
+    height: 15vh;
+    margin-top: 30px;
+  }
+  .footerContent img {
+    width: 32px;
+    margin: 10px;
+    justify-content: space-around;
+  }
+  /* contacto */
+  .pictureContacto {
+    grid-area: pictureContacto;
+  }
+  .formContacto {
+    grid-area: formContacto;
+    width: 100%;
+    padding: 40px;
+  }
+  .mapContacto {
+    grid-area: mapContacto;
+    width: auto;
+    height: auto;
+  }
+  .mainContacto {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh auto;
+    grid-template-areas: "pictureContacto formContacto" "mapContacto formContacto";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
