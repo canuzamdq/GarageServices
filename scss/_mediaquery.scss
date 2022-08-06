@@ -21,7 +21,7 @@
     
     .mainContainer {
         @include displayFlex (center, center, row);
-        max-width: 1980px;
+        
     }
 
 /* Pages */
@@ -85,7 +85,7 @@
     
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1980px) {
 
     .headerContainer {
         height: 68vh;
@@ -99,14 +99,13 @@
         font-weight: 400;
         text-align: center;
     
-    
-        & h1 {
+        h1 {
             font-weight: 600;
             font-size: map-get($map: $fontSize, $key: 50);
             text-shadow: none;
         }
     
-        & h2 {
+        h2 {
             font-weight: 600;
             font-size: map-get($map: $fontSize, $key: 20);
             text-shadow: none;
@@ -154,14 +153,14 @@
             background-color: $drkBlue;
         }
     
-        & h3 {
+        h3 {
             font-size: map-get($map: $fontSize, $key: 15);
             font-weight: 600;
             margin-bottom: 20px;
         
         }
 
-        & p {
+        p {
             display:initial;
             width: 75%;
             text-align: center;
@@ -179,7 +178,7 @@
     height: 15vh;
     margin-top: 30px;
 
-    & img {
+    img {
         width: 32px;
         margin: 10px;
         justify-content: space-around;

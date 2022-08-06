@@ -32,12 +32,12 @@ a {
 }
 .heroText h1 {
   font-weight: 400;
-  font-size: 3em;
+  font-size: 3rem;
   text-shadow: 0.01em 0.01em 0.1em rgb(51, 51, 51);
 }
 .heroText h2 {
   font-weight: 400;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   text-shadow: 0.01em 0.01em 0.1em rgb(51, 51, 51);
 }
 
@@ -88,7 +88,7 @@ a {
   background-color: rgb(63, 106, 223);
 }
 .btnSection h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .btnSection p {
@@ -173,12 +173,12 @@ a {
 }
 .sectionArticle h3 {
   color: rgb(12, 59, 184);
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
 }
 .sectionArticle h4 {
   color: rgb(12, 33, 92);
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -191,7 +191,7 @@ a {
 }
 .sectionArticleText p {
   color: rgb(51, 51, 51);
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   text-align: center;
   font-style: italic;
@@ -227,6 +227,7 @@ a {
 .sectionPicture.diagnostico {
   background-image: url(../img/taller.jpg);
   background-position: center;
+  transform: scaleX(-1);
 }
 .sectionPicture.nosotros {
   background-image: url(../img/nosotros1.jpg);
@@ -251,6 +252,10 @@ a {
   width: 25px;
   margin: 10px;
   justify-content: space-between;
+  transition: background-color 0.7s;
+}
+.footerContentPages img:hover {
+  scale: 140%;
 }
 
 /** Contacto **/
@@ -284,7 +289,7 @@ form {
 }
 .pictureContacto h3 {
   color: rgb(12, 33, 92);
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
   padding-top: 10px;
 }
@@ -319,7 +324,7 @@ form {
 }
 .formGroup p {
   color: rgb(51, 51, 51);
-  font-size: 1em;
+  font-size: 1rem;
   padding: 10px;
 }
 
@@ -342,6 +347,20 @@ form {
   width: 100px;
   height: 40px;
   margin: 5px;
+}
+
+.btn-secondary {
+  background-color: rgb(12, 33, 92);
+}
+.btn-secondary:hover {
+  background-color: rgb(63, 106, 223);
+}
+.btn-secondary:focus {
+  background-color: rgb(63, 106, 223);
+}
+
+.modal-title {
+  text-align: right;
 }
 
 .textAreaSize {
@@ -391,7 +410,6 @@ form {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    max-width: 1980px;
   }
   /* Pages */
   .mainContainerPages {
@@ -404,7 +422,7 @@ form {
   }
   .sectionArticle h3 {
     color: rgb(12, 59, 184);
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: 400;
   }
   .sectionArticle img {
@@ -440,7 +458,7 @@ form {
     padding: 40px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1980px) {
   .headerContainer {
     height: 68vh;
   }
@@ -452,12 +470,12 @@ form {
   }
   .heroText h1 {
     font-weight: 600;
-    font-size: 5em;
+    font-size: 5rem;
     text-shadow: none;
   }
   .heroText h2 {
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2rem;
     text-shadow: none;
   }
   .mainContainer {
@@ -491,7 +509,7 @@ form {
     background-color: rgb(12, 33, 92);
   }
   .btnSection h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
   }
@@ -499,7 +517,7 @@ form {
     display: initial;
     width: 75%;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
   }
   .iconSection {
     width: 80px;

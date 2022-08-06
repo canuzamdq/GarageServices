@@ -16,11 +16,11 @@
 .bgColorNav {
     background-color:  rgba(51, 51, 51,0.7);
 
-        & ul a {
+        ul a {
             color: $white;
         }
 
-        & ul a:hover {
+        ul a:hover {
             font-weight: 600;
             color: $white;
         }

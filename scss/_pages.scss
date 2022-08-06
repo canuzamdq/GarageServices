@@ -40,13 +40,13 @@
     margin-bottom: 10px;
     background-color: $white;
 
-    & h3 {
+    h3 {
         color: $blue;
         font-size: map-get($map: $fontSize, $key: 20);
         font-weight: 600;
     }
         
-    & h4 {
+    h4 {
         color: $drkBlue;
         font-size: map-get($map: $fontSize, $key: 20);
         font-weight: 600;
@@ -63,7 +63,7 @@
     .sectionArticleText {
         margin-bottom: 20px;
 
-        & p {
+        p {
             color: $grey;
             font-size: map-get($map: $fontSize, $key: 10);
             font-weight: 400;
@@ -91,7 +91,7 @@
         background-color: $ligthBlue;
     }
 
-    & a {
+    a {
         color: $white;
     }
 }
@@ -108,6 +108,7 @@
     &.diagnostico {
         background-image: url(../img/taller.jpg);
         background-position: center;
+        transform: scaleX(-1);
     }
 
     &.nosotros {
@@ -126,14 +127,19 @@
     color: $white;
     background-color: $grey;
 
-    & p {
+    p {
         display: none;
     }
 
-    & img {
+    img {
         width: 25px;
         margin: 10px;
         justify-content: space-between;
+        transition: background-color 0.7s;
+
+        &:hover {
+            scale: 140%;
+        }
     }
 }
 
@@ -161,7 +167,7 @@ form {
     height: auto;
     background-color: $white;
 
-    & h3 {
+    h3 {
         color: $drkBlue;
         font-size: map-get($map: $fontSize, $key: 20);
         font-weight: 600;
@@ -193,7 +199,7 @@ form {
         height: auto;
         background-color: $white;
         
-        & p {
+        p {
             color: $grey;
             font-size:  map-get($map: $fontSize, $key: 10);
             padding: 10px;         
@@ -218,6 +224,20 @@ form {
         width: 100px;
         height: 40px;
         margin: 5px;
+    }
+
+    .btn-secondary{
+        background-color: $drkBlue;
+        &:hover {
+            background-color: $ligthBlue;
+        }
+        &:focus {
+            background-color: $ligthBlue;
+        }
+    }
+
+    .modal-title {
+       text-align: right;
     }
 
     .textAreaSize {

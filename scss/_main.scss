@@ -10,12 +10,12 @@
         background-color: $ligthBlue;
     }
 
-    & h3 {
+    h3 {
         font-size: map-get($map:$fontSize , $key: 15);
         font-weight: 400;
     }
 
-    & p {
+    p {
         display: none;
     }
 
