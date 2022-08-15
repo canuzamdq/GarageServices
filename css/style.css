@@ -21,7 +21,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 350px;
+  height: 380px;
 }
 
 .heroText {
@@ -138,7 +138,7 @@ a {
 /** Pages-header**/
 .headerPages {
   width: 100%;
-  height: 8vh;
+  height: 7vh;
 }
 
 /** Pages-Nav**/
@@ -424,12 +424,13 @@ form {
     color: rgb(12, 59, 184);
     font-size: 2.5rem;
     font-weight: 400;
+    margin-bottom: 10px;
   }
   .sectionArticle img {
-    width: 120px;
+    width: 100px;
   }
   .sectionPicture {
-    height: 80vh;
+    height: 81vh;
     background-position: right;
   }
   .footerContent {
@@ -458,7 +459,11 @@ form {
     padding: 40px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1980px) {
+@media (min-width: 1024px) {
+  .headerPages {
+    width: 100%;
+    height: 8vh;
+  }
   .headerContainer {
     height: 68vh;
   }
@@ -486,11 +491,15 @@ form {
     display: flex;
     width: 100%;
   }
+  .sectionPicture {
+    height: 80vh;
+  }
   /* clase base */
   .section, .section4, .section3, .section2, .section1 {
-    width: 18vw;
+    width: 18%;
     min-width: 220px;
-    margin: 50px 8px;
+    margin: 40px 8px;
+    padding: 0;
   }
   .section:hover, .section4:hover, .section3:hover, .section2:hover, .section1:hover {
     transform: translateY(-10px);
@@ -500,7 +509,6 @@ form {
     width: 18vw;
     min-width: 220px;
     height: 42vh;
-    justify-content: flex-start;
   }
   .btnSection:hover {
     background-color: rgb(12, 59, 184);
@@ -511,17 +519,18 @@ form {
   .btnSection h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin: 0px auto;
+    margin-bottom: 30px;
   }
   .btnSection p {
     display: initial;
+    margin: 0 auto;
     width: 75%;
     text-align: center;
     font-size: 1rem;
   }
   .iconSection {
     width: 80px;
-    margin-top: 50px;
   }
   .footerContent {
     height: 15vh;
@@ -529,7 +538,7 @@ form {
   }
   .footerContent img {
     width: 32px;
-    margin: 10px;
+    margin-top: 10px;
     justify-content: space-around;
   }
   /* contacto */
@@ -553,6 +562,43 @@ form {
     grid-template-rows: 40vh auto;
     grid-template-areas: "pictureContacto formContacto" "mapContacto formContacto";
   }
+  .formContacto {
+    padding: 40px;
+    margin-top: -10px;
+  }
+}
+.video404 {
+  background-color: rgb(180, 213, 185);
+  position: relative;
+}
+
+@keyframes textAlpha { /* timeline solo con principio y fin */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(180, 213, 185);
+  padding: 20px;
+  text-align: center;
+}
+.text h1 {
+  background-color: rgb(216, 27, 27);
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  animation-name: textAlpha;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.text p, .text a {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

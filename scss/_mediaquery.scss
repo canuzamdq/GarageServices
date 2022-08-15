@@ -1,6 +1,6 @@
 
 @media (min-width: 768px) {
-
+    
     .headerContainer {
         height: 50vh;
         width: auto;
@@ -38,17 +38,18 @@
         color: $blue;
         font-size: map-get($map: $fontSize, $key: 25);
         font-weight: 400;
+        margin-bottom: 10px;
         }
 
         & img {
-            width: 120px;
+            width: 100px;
         }
     }
        
 
 
     .sectionPicture {
-        height: 80vh;
+        height: 81vh;
         background-position: right;
     }
 
@@ -85,12 +86,16 @@
     
 }
 
-@media (min-width: 1024px) and (max-width: 1980px) {
+@media (min-width: 1024px) {
+
+    .headerPages {
+        width: 100%;
+        height: 8vh;
+        
+    }
 
     .headerContainer {
         height: 68vh;
-
-
     }
 
     .heroText {
@@ -118,13 +123,19 @@
         display: flex;
         width: 100%;
     }
+
+    .sectionPicture {
+        height: 80vh;
+    }
+
     
 /* clase base */
 
     .section {
-        width: 18vw;
+        width: 18%;
         min-width: 220px;
-        margin: 50px 8px;
+        margin: 40px 8px;
+        padding: 0;
     
         &:hover {
             transform: translateY(-10px);
@@ -136,14 +147,12 @@
         .section#{$i}{@extend .section;}
     }
    
-    
-
 
    .btnSection {
     width: 18vw;
     min-width: 220px;
     height: 42vh;
-    justify-content: flex-start;
+    
 
         &:hover {
             background-color: $blue;
@@ -156,12 +165,13 @@
         h3 {
             font-size: map-get($map: $fontSize, $key: 15);
             font-weight: 600;
-            margin-bottom: 20px;
-        
+            margin: 0px auto; 
+            margin-bottom: 30px;
         }
 
         p {
             display:initial;
+            margin: 0 auto;
             width: 75%;
             text-align: center;
             font-size: map-get($map: $fontSize, $key: 10);
@@ -170,7 +180,7 @@
 
 .iconSection {
     width: 80px;
-    margin-top: 50px;
+  
 
 }
 
@@ -180,7 +190,7 @@
 
     img {
         width: 32px;
-        margin: 10px;
+        margin-top: 10px;
         justify-content: space-around;
     }
 }
@@ -217,5 +227,9 @@
     "mapContacto formContacto";
 }
 
+.formContacto {
+    padding: 40px;
+    margin-top: -10px;
+}
 
 }

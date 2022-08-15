@@ -1,0 +1,30 @@
+.video404 {
+  background-color: rgb(180, 213, 185);
+  position: relative;
+}
+
+@keyframes textAlpha { /* timeline solo con principio y fin */
+	from{opacity: 0}
+	to{ opacity: 1}
+}
+
+.text {
+  @include displayFlex (center, center, column);
+  background-color: rgb(180, 213, 185);
+  padding: 20px;
+  text-align: center;
+    h1 {
+      background-color:  rgb(216, 27, 27);
+      color: $white;
+      font-size: 4em;
+      animation-name: textAlpha;
+	    animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+    p, a {
+      font-size: 2em;
+    }
+
+
+}
+
