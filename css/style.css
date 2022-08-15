@@ -567,11 +567,6 @@ form {
     margin-top: -10px;
   }
 }
-.video404 {
-  background-color: rgb(180, 213, 185);
-  position: relative;
-}
-
 @keyframes textAlpha { /* timeline solo con principio y fin */
   from {
     opacity: 0;
@@ -585,7 +580,6 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(180, 213, 185);
   padding: 20px;
   text-align: center;
 }
